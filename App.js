@@ -1,17 +1,28 @@
-import { View, Text, StyleSheet } from "react-native";
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  StatusBar,
+  Button,
+} from "react-native";
+
+import estilos from "./estilos";
 
 export default function App() {
   return (
-    <View style={estilos.container}>
-      <Text>Olá</Text>
-    </View>
+    <SafeAreaView style={estilos.container}>
+      <StatusBar barStyle="light-content" />
+      <View style={estilos.um}>
+        <Text style={estilos.titulo}>React Native</Text>
+      </View>
+
+      <View style={estilos.dois}>
+        <Text style={estilos.subtitulo}>
+          Trabalhando com desenvolvimento de apps
+        </Text>
+      </View>
+      <Button title="Toca aqui mano!" />
+    </SafeAreaView>
   );
 }
-
-const estilos = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItens: "center",
-    justifyContent: "center",
-  },
-});
