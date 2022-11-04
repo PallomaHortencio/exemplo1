@@ -1,14 +1,17 @@
-import { View } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 export default function App() {
-  return <View></View>;
+  return (
+    <View style={estilos.container}>
+      <Text>Olá</Text>
+    </View>
+  );
 }
 
-const styles = StyleSheet.create({
+const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
+    alignItens: "center",
     justifyContent: "center",
   },
 });
